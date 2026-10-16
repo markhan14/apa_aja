@@ -281,6 +281,48 @@
       font-style: italic;
     }
 
+    /* ===== Keterangan jam perkuliahan ===== */
+    .keterangan-jam {
+      max-width: 480px;
+      margin: 0 auto 20px;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .keterangan-jam table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      color: #1f2233;
+      background: none;
+      border-top: 3px solid #2e2f83;
+    }
+
+    .keterangan-jam th {
+      color: #6b7088;
+      font-size: 0.75rem;
+      letter-spacing: 0.5px;
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #c9bcc2;
+    }
+
+    .keterangan-jam td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #d8ccd2;
+      text-align: left;
+    }
+
+    .keterangan-jam tr:last-child td {
+      border-bottom: none;
+    }
+
+    .keterangan-jam .salat td {
+      color: #0f766e;
+      font-weight: bold;
+      border-bottom: 1px solid #14b8a6;
+      border-top: 1px solid #14b8a6;
+    }
+
     /* Kanvas kembang api: menutupi layar, tidak menghalangi klik */
     #kembangApi {
       position: fixed;
@@ -590,6 +632,36 @@
           </table>
         </div>
       </section>
+
+      <!-- ===== KETERANGAN JAM PERKULIAHAN ===== -->
+      <h2 style="margin-top:40px;">Keterangan Jam Perkuliahan (Reguler)</h2>
+      <div class="keterangan-jam">
+        <table>
+          <thead>
+            <tr><th>JAM KE</th><th>WAKTU</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>06.30 – 07.20</td></tr>
+            <tr><td>2</td><td>07.20 – 08.10</td></tr>
+            <tr><td>3</td><td>08.10 – 09.00</td></tr>
+            <tr><td>4</td><td>09.00 – 09.50</td></tr>
+            <tr><td>5</td><td>09.50 – 10.40</td></tr>
+            <tr><td>6</td><td>10.40 – 11.30</td></tr>
+            <tr class="salat"><td>Salat Zuhur</td><td>11.30 – 12.30</td></tr>
+            <tr><td>7</td><td>12.30 – 13.20</td></tr>
+            <tr><td>8</td><td>13.20 – 14.10</td></tr>
+            <tr><td>9</td><td>14.10 – 15.00</td></tr>
+            <tr class="salat"><td>Salat Asar</td><td>15.00 – 15.30</td></tr>
+            <tr><td>10</td><td>15.30 – 16.20</td></tr>
+            <tr><td>11</td><td>16.20 – 17.10</td></tr>
+            <tr><td>12</td><td>17.10 – 18.00</td></tr>
+            <tr class="salat"><td>Salat Magrib</td><td>18.00 – 18.30</td></tr>
+            <tr><td>13</td><td>18.30 – 19.20</td></tr>
+            <tr><td>14</td><td>19.20 – 20.10</td></tr>
+            <tr><td>15</td><td>20.10 – 21.00</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
   <script>
